@@ -1,5 +1,5 @@
 :root {
-	--gradient: linear-gradient(45deg, #ee6352, #e03fe6, #ee6352);
+	--gradient: linear-gradient(145deg, #ff0000, #1900ff, #ff0000);
 }
 
 body {
@@ -15,10 +15,10 @@ body {
 	background-size: 300%;
 	background-image: var(--gradient);
 	-webkit-animation: bg-animation 5s infinite;
-	animation: bg-animation 5s infinite;
+	animation: bg-animation 10s infinite;
 }
 
-@-webkit-keyframes bg-animation {
+/* @-webkit-keyframes bg-animation {
 	0% {
 		background-position: left;
 	}
@@ -28,13 +28,13 @@ body {
 	100% {
 		background-position: right;
 	}
-}
+} */
 
 @keyframes bg-animation {
 	0% {
 		background-position: left;
 	}
-	50% {
+	80% {
 		background-position: right;
 	}
 	100% {
@@ -74,7 +74,7 @@ body {
 	border: 0;
 	cursor: pointer;
 	padding: 0.5em 1.25em;
-	background: linear-gradient(90deg, #ee6352, purple, #ee6352);
+	background: var(--gradient);
 	background-size: 300%;
 	background-position: left;
 	transition: background-position 350ms;
